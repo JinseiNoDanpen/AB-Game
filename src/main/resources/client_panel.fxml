@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.luca.AB_Game.client.GuiController">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="Server">
+                    <items>
+                        <MenuItem fx:id="option_connect" mnemonicParsing="false" onAction="#onConnect" text="Connect" />
+                        <MenuItem fx:id="option_disconnect" mnemonicParsing="false" onAction="#onConnect" text="Disconnect" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane fx:id="pane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Hyperlink fx:id="button_Ally" layoutX="291.0" layoutY="85.0" visible="false" />
+            <Hyperlink fx:id="button_Start" layoutX="291.0" layoutY="279.0" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="291.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="279.0" />
+            <Label fx:id="text_Counter" layoutX="506.0" layoutY="14.0" prefHeight="23.0" prefWidth="120.0" AnchorPane.bottomAnchor="338.0" AnchorPane.leftAnchor="506.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+            <Hyperlink fx:id="button_Betray" layoutX="291.0" layoutY="231.0" visible="false" />
+            <Label fx:id="info0" layoutX="12.0" layoutY="9.0" prefHeight="34.0" prefWidth="411.0" text="The Ambidex Game will now begin." textFill="#c3f5df">
+               <font>
+                  <Font name="Inconsolata" size="20.0" />
+               </font></Label>
+            <Label fx:id="info1" layoutX="14.0" layoutY="37.0" prefHeight="34.0" prefWidth="622.0" text="To enter your vote, please touch the &quot;START&quot; button on your screen." textFill="#c3f5df">
+               <font>
+                  <Font name="Inconsolata" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="info2" layoutX="12.0" layoutY="91.0" prefHeight="34.0" prefWidth="622.0" text="Once you have entered your vote, the door will lock automatically." textFill="#c3f5df">
+               <font>
+                  <Font name="Inconsolata" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="info3" layoutX="12.0" layoutY="119.0" prefHeight="34.0" prefWidth="622.0" text="It will not open again until the polling period has finished." textFill="#c3f5df">
+               <font>
+                  <Font name="Inconsolata" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="confirmation0" layoutX="14.0" layoutY="46.0" prefHeight="30.0" prefWidth="296.0" text="Vote has been recorded." textFill="#c3f5df" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="confirmation1" layoutX="12.0" layoutY="70.0" prefHeight="25.0" prefWidth="231.0" text="Please wait." textFill="#c3f5df" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+        </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+    </children>
+</VBox>
